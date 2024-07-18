@@ -80,6 +80,7 @@ const items_2 = {
 function App() {
 
   const [isOffered, setIsOffered] = useState("")
+  const [isDropdown, setIsDropdown] = useState(false)
 
   useEffect(() => {
     setIsOffered(getCookie("isOffered"))
@@ -88,8 +89,8 @@ function App() {
   return (
     <>
       {!isOffered && <Offer setIsOffered={setIsOffered}/>}
-      <Navbar/>
-      <Dropdown/>
+      <Navbar setIsDropdown={setIsDropdown}/>
+      {isDropdown && <Dropdown setIsDropdown={setIsDropdown}/>}
       <Banner/>
       <Brands/>
 
