@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        slide: "slide 10s ",
+      },
+      keyframes: {
+        slide: {
+          'from': { transform: 'translateX(calc(100vw))' },
+          'to': { transform: 'translateX(calc(-100%))' },
+        }
+      }
+    },
   },
   plugins: [],
 }
