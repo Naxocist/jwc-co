@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Banner from './components/Banner/Banner'
 import Brands from './components/Banner/Brands'
 import Browse from './components/Content/Browse'
@@ -9,6 +11,8 @@ import Dropdown from './components/Navbar/Dropdown'
 import Navbar from './components/Navbar/Navbar'
 
 import Offer from './components/Offer'
+import { getCookie } from './utils/cookies'
+import { useEffect } from 'react'
 
 const items_1 = {
   0: {
@@ -71,10 +75,19 @@ const items_2 = {
 }
 
 
+
+
 function App() {
+
+  const [isOffered, setIsOffered] = useState("")
+
+  useEffect(() => {
+    setIsOffered(getCookie("isOffered"))
+  }, [])
+
   return (
     <>
-      <Offer/>
+      {!isOffered && <Offer setIsOffered={setIsOffered}/>}
       <Navbar/>
       <Dropdown/>
       <Banner/>
