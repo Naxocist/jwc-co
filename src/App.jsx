@@ -78,7 +78,6 @@ const items_2 = {
 
 
 function App() {
-
   const [isOffered, setIsOffered] = useState("")
   const [isDropdown, setIsDropdown] = useState(false)
 
@@ -88,18 +87,18 @@ function App() {
 
   return (
     <>
-      {!isOffered && <Offer setIsOffered={setIsOffered}/>}
+      <Offer isOffered={isOffered} setIsOffered={setIsOffered}/>
       <Navbar setIsDropdown={setIsDropdown}/>
-      {isDropdown && <Dropdown setIsDropdown={setIsDropdown}/>}
+      <Dropdown isDropdown={isDropdown} setIsDropdown={setIsDropdown}/>
       <Banner/>
       <Brands/>
 
       <div className="pt-[70px] px-[100px] mb-[78px]">
-        <Section items={items_1}/>
+        <Section items={items_1} word="NEW ARRIVALS"/>
 
         <hr className="mt-[64px] mb-[62px] border-[rgba(0,0,0,.1)]"></hr>
 
-        <Section items={items_2}/>
+        <Section items={items_2} word="TOP SELLING"/>
 
         <Browse/>
       </div>

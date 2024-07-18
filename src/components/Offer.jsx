@@ -1,11 +1,10 @@
 import { setCookie } from "../utils/cookies"
 
-function Offer({setIsOffered}) {
+function Offer({isOffered, setIsOffered}) {
   return (
-    <div className="h-[38px] bg-black flex items-center justify-center relative">
+    <div className="bg-black flex items-center justify-center relative duration-200" style={{height: !isOffered ? "38px" : "0px"}}>
 
       <p className="text-white">Sign up and get 20% off to your first order. <u className="hover:cursor-pointer">Sign Up Now</u></p>
-
 
       <div className="hover:cursor-pointer absolute right-[100px]" onClick={() => {setCookie("isOffered", "true", 999); setIsOffered("true")}}>
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

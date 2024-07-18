@@ -25,3 +25,24 @@
 body {
   overflow-x: hidden;
 }
+
+
+.logos-slide {
+  white-space: nowrap;
+  animation: slide 10s infinite linear;
+}
+
+.logos-slide>* {
+  display: inline;
+  margin-left: 53px;
+  margin-right: 53px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,7 +1,7 @@
-function Dropdown({setIsDropdown}) {
+function Dropdown({isDropdown, setIsDropdown}) {
   return (
-    <div className="pb-[54px] pl-[100px]" onMouseLeave={() => {setIsDropdown(false)}}>
-      <div className="flex gap-[80px]">
+    <div className="duration-500" style={{height: isDropdown ? "250px" : "0px"}} onMouseLeave={() => {setIsDropdown(false)}}>
+      <div className="flex gap-[80px] mb-[54px] ml-[100px]">
 
         <div>
           <h1 className="font-[800] text-[16px] mb-[20px]">Shop branch</h1>
