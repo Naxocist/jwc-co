@@ -83,7 +83,7 @@ function App() {
       <div className="pt-[70px] px-[100px] mb-[78px]">
         <Section items={items_1}/>
 
-        <hr className="mt-[64px] mb-[62px]"></hr>
+        <hr className="mt-[64px] mb-[62px] border-[rgba(0,0,0,.1)]"></hr>
 
         <Section items={items_2}/>
 
