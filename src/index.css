@@ -26,10 +26,9 @@ body {
   overflow-x: hidden;
 }
 
-
 .logos-slide {
   white-space: nowrap;
-  animation: slide 10s infinite linear;
+  /* animation: slide 10s infinite linear; */
 }
 
 .logos-slide>* {
