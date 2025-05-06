@@ -3,7 +3,7 @@ function Banner() {
     <div className="bg-[#F2F0F1] h-[663px] z-30 relative overflow-hidden">
 
       {/* Bg image */}
-      <img className="w-[500px] absolute right-40 top-10" src="https://s3-alpha-sig.figma.com/img/b26f/ea69/ccfd8aa5825862cdb9604a4fb4930464?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZywyPvG~0-SNmCzufGtyEjRq~cROHBqXnFxTaqJ5XJ5KZQ3jOKVzMIjMQKDPjzM7OSwBjEAII2MT7tGwRIq3lWsfMIgOSWhkORXRa2-SkIRx0L7HcehBfq7JrfrBDJ8-d2h3EPjWQ8L-4-sU7OSvpMqQxKHvToncmesJLL7wl6ra80DgKqx~Wvut2Tlwd~SM8NWRvE~OrKpDFgaB6zvJlpRuCk1F18KWaSWXLQDQcmei7N7JzclBbIFIOgbIis0a81Oht8vp4aJ-~8DuNxeTXOuduGd5WnjGO4-E82EkM2OsWrxfuUFeHBcQDCXBsdaH11n4RG~d5xCvVr-Urofx-Q__"></img>
+      <img className="w-[700px] absolute right-10 top-10" src="/src/assets/model.webp"></img>
 
       {/* Stars */}
       <svg className="absolute top-[86px] right-[81px]" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">

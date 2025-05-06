@@ -11,7 +11,8 @@ function Item({title, pic, price, discount, stars, percent}) {
   return (
     <div>
       <div className="w-[295px] h-[298px] bg-[#F0EEED] rounded-[20px] overflow-hidden relative">
-        <img className="absolute top-[-70px] scale-[90%]" src={pic}></img>
+        {/* This is dummy picture because the figma project which images originated from isn't public anymore */}
+        <img className="absolute" src="/src/assets/shirt.webp"></img>
       </div>
 
       <p className="font-[700] text-[20px]">{title}</p>
