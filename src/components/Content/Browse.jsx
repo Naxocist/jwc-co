@@ -10,14 +10,14 @@ function Browse() {
             <div className="h-[289px] w-[407px] bg-green-300 rounded-[20px] relative overflow-hidden">
               <h2 className="font-[700] text-[36px] absolute top-[27px] left-[36px] z-10">Casual</h2>
               <div className="absolute w-[200px] top-[25px] right-[40px]">
-                <img className="w-full h-full object-cover" src="/src/assets/casual.png"></img>
+                <img className="w-full h-full object-cover" src="/casual.png"></img>
               </div>
             </div>
 
             <div className="bg-blue-200 grow rounded-[20px] relative overflow-hidden">
               <h2 className="font-[700] text-[36px] absolute top-[27px] left-[36px] z-10">Formal</h2>
               <div className="w-full h-full absolute top-[-140px]">
-                <img className="object-cover scale-75" src="/src/assets/formal.png"></img>
+                <img className="object-cover scale-75" src="/formal.png"></img>
               </div>
             </div>
 
@@ -28,14 +28,14 @@ function Browse() {
             <div className="bg-white grow rounded-[20px] relative overflow-hidden">
               <h2 className="font-[700] text-[36px] absolute top-[27px] left-[36px] z-10">Party</h2>
               <div className="w-full h-full absolute bottom-[85px] left-[100px] scale-[45%]">
-                <img className="object-cover" src="/src/assets/party.webp"></img>
+                <img className="object-cover" src="/party.webp"></img>
               </div>
             </div>
 
             <div className="h-[289px] w-[407px] bg-white rounded-[20px] relative overflow-hidden">
               <h2 className="font-[700] text-[36px] absolute top-[27px] left-[36px] z-10">Gym</h2>
               <div className="absolute -bottom-[160px] left-[60px]">
-                <img className="w-full h-full object-cover scale-[1.5]" src="/src/assets/gym.webp"></img>
+                <img className="w-full h-full object-cover scale-[1.5]" src="/gym.webp"></img>
               </div>
             </div>
 

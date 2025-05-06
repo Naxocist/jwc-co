@@ -3,7 +3,7 @@ function Banner() {
     <div className="bg-[#F2F0F1] h-[663px] z-30 relative overflow-hidden">
 
       {/* Bg image */}
-      <img className="w-[700px] absolute right-10 top-10" src="/src/assets/model.webp"></img>
+      <img className="w-[700px] absolute right-10 top-10" src="/model.webp"></img>
 
       {/* Stars */}
       <svg className="absolute top-[86px] right-[81px]" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
